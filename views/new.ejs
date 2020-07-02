@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NEW</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<form action="/blogs/newblog" method="POST">
+<div class="container text-center mt-3"><h2><b>ADD NEW BLOG</b></h2></div>
+<div class="container" id="special" style="margin-top:2%;margin-left:25%;width:50%">
+ <div class="form-group">
+    <label for="exampleFormControlInput1">Title</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" name="title" placeholder="Title">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput2">Image</label>
+    <input type="text" class="form-control" id="exampleFormControlInput2" name="image" placeholder="Image">
+  </div>
+   <div class="form-group">
+    <label for="exampleFormControlSelect1">BlogType</label>
+    <select class="form-control" name="blogType" id="exampleFormControlSelect1">
+      <option>Food</option>
+      <option>Animals</option>
+      <option>Nature</option>
+      <option>Vlogging</option>
+      <option>Women Empowerment</option>
+      <option>Feminism</option>
+      <option>Pollution</option>
+      <option>Corona_affecting_Economy</option>
+      <option>Nature_Conservation</option>
+      <option>Corruption</option>
+      <option>SocialMedia</option>
+      <option>Poverty</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Content</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" name="body" rows="4"></textarea>
+  </div>
+  <button class="btn btn-success mr-2">Submit</button>
+  <a class="btn btn-primary mr-2" href="/blogs">Go Back</a>
+  <a class="btn btn-secondary" href="/">Home</a>
+</form>
+</div>
+</body>
+</html>
